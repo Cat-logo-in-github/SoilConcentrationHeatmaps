@@ -163,6 +163,7 @@ function setup() {
   btnRiceA.position(width+20, 20);
   btnRiceA.mousePressed(() => {
   labeltext = 0;
+  needsUpdate = true;
   filenames = ['data.csv', 'data1.csv']
   computeGlobalMinMax(filenames, () => {
     loadNewData(filenames[0]);
@@ -173,6 +174,7 @@ function setup() {
   btnRiceAc.position(width+20, 50);
   btnRiceAc.mousePressed(() => {
   labeltext = 1;
+  needsUpdate = true;
   filenames = ['data4.csv', 'data5.csv']
   computeGlobalMinMax(filenames, () => {
     loadNewData(filenames[0]);
@@ -183,6 +185,7 @@ function setup() {
   btnRiceB.position(width+20, 90);
   btnRiceB.mousePressed(() => {
   labeltext = 2;
+  needsUpdate = true;
   filenames = ['data - Copy.csv', 'data1 - Copy.csv']
   computeGlobalMinMax(filenames, () => {
     loadNewData(filenames[0]);
@@ -193,6 +196,7 @@ function setup() {
   btnRiceBc.position(width+20, 120);
   btnRiceBc.mousePressed(() => {
   labeltext = 3;
+  needsUpdate = true;
   filenames = ['data4 - Copy.csv', 'data5 - Copy.csv']
   computeGlobalMinMax(filenames, () => {
     loadNewData(filenames[0]);
@@ -203,6 +207,7 @@ function setup() {
   btnTea.position(width+20, 160);
   btnTea.mousePressed(() => {
   labeltext = 4;
+  needsUpdate = true;
   filenames = ['data2.csv', 'data3.csv']
   computeGlobalMinMax(filenames, () => {
     loadNewData(filenames[0]);
@@ -213,6 +218,7 @@ function setup() {
   btnTeac.position(width+20, 190);
   btnTeac.mousePressed(() => {
   labeltext = 5;
+  needsUpdate = true;
   filenames = ['data6.csv', 'data7.csv']
   computeGlobalMinMax(filenames, () => {
     loadNewData(filenames[0]);
